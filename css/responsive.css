@@ -110,8 +110,9 @@
 		width: 90px;
 	}
 	.about-info {
-		text-align: center;
+		text-align: justify;
 		margin-bottom: 50px;
+		font-size: bold;
 	}
 	.team-member {
 		margin-bottom: 50px;
