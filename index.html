@@ -15,6 +15,7 @@
     <link id="css-preset" href="css/presets/preset1.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
 
+
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -22,6 +23,21 @@
 
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="images/favicon.ico">
+
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v3.1';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <script src="https://snapwidget.com/js/snapwidget.js"></script>
+
 </head>
 <!--/head-->
 
@@ -73,9 +89,11 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="scroll active"><a href="#home">Inicio</a></li>
                         <li class="scroll"><a href="#about-us">Nosotros</a></li>
+                        <li class="scroll"><a href="#rrss">Noticias</a></li>
+
                         <!--li class="scroll"><a href="#services">Actividades</a></li-->
                         <li class="scroll"><a href="#portfolio">Galería</a></li>
-                        <li class="scroll"><a href="#rrss">Redes Sociales</a></li>
+                        <li class="scroll"><a href="#team">Dirección</a></li>
                         <li class="scroll"><a href="#contact">Contáctanos</a></li>
                     </ul>
                 </div>
@@ -90,6 +108,7 @@
         </div>
 
     </section-->
+
     <!--/#services-->
     <section id="about-us" class="parallax">
         <div class="container">
@@ -98,16 +117,124 @@
                 <div class="col-sm-6">
                     <div class="about-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
                         <h2>Ohiro Rapa Nui</h2>
-                        <p>Somos un grupo de amigos unidos por la pasión y mística de la cultura Rapa Nui que se reúnen semanalmente
-                            a compartir y disfrutar de la música y la danza. </p>
-                        <p>Nuestro motor es honrar esta cultura ancestral y llevarla a distintos rincones de nuestro país,
-                            viviéndola y sintiéndola en cada preserntación, llenándonos del mana rapa nui a través de la
-                            vivencia de su cultura.</p>
+                        <p>Somos un grupo de amigos unidos por la pasión y mística de la cultura Rapa Nui que se reúnen semanalmente a compartir y disfrutar de la música y la danza. </p>
+                        <p>Nuestro motor es honrar esta cultura ancestral y llevarla a distintos rincones de nuestro país, viviéndola y sintiéndola en cada preserntación, llenándonos del mana rapa nui a través de la vivencia de su cultura.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!--/#twitter-->
+    <section id="rrss">
+        <div class="container">
+            <div class="row">
+                <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
+                    <div class="headerTitle">
+                        <h2>Noticias</h2>
+                    </div>
+                    <br>
+                </div>
+
+
+
+                <!-- SnapWidget -->
+
+                <iframe src="https://snapwidget.com/embed/602988" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
+
+
+            </div>
+
+            <!--div class="blog-posts">
+            <div class="row">
+                <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
+                    <div class="post-thumb">
+                        <a href="#"><img class="img-responsive" src="images/blog/1.jpg" alt=""></a>
+                        <div class="post-meta">
+                            <span><i class="fa fa-comments-o"></i> 3 Comments</span>
+                            <span><i class="fa fa-heart"></i> 0 Likes</span>
+                        </div>
+                        <div class="post-icon">
+                            <i class="fa fa-pencil"></i>
+                        </div>
+                    </div>
+                    <div class="entry-header">
+                        <h3><a href="#">Fiesta "Tapati" 2016</a></h3>
+                        <span class="date">Febrero, 2016</span>
+                        <span class="cetagory">in <strong>Cultura</strong></span>
+                    </div>
+                    <div class="entry-content">
+                        <p>La Tapati, fiesta tradicional de Rapa nui en donde se conmemoran y rinden honores a las tradiciones
+                            de los primero habitantes de la isla, cumple 50 años, por lo que este año la celebración
+                            será... </p>
+                    </div>
+                </div>
+                <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
+                    <div class="post-thumb">
+                        <div id="post-carousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#post-carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#post-carousel" data-slide-to="1"></li>
+                                <li data-target="#post-carousel" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <a href="#"><img class="img-responsive" src="images/blog/2.jpg" alt=""></a>
+                                </div>
+                                <div class="item">
+                                    <a href="#"><img class="img-responsive" src="images/blog/3.jpg" alt=""></a>
+                                </div>
+                            </div>
+                            <a class="blog-left-control" href="#post-carousel" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+                            <a class="blog-right-control" href="#post-carousel" role="button" data-slide="next"><i class="fa fa-angle-right"></i></a>
+                        </div>
+                        <div class="post-meta">
+                            <span><i class="fa fa-comments-o"></i> 3 Comments</span>
+                            <span><i class="fa fa-heart"></i> 0 Likes</span>
+                        </div>
+                        <div class="post-icon">
+                            <i class="fa fa-picture-o"></i>
+                        </div>
+                    </div>
+                    <div class="entry-header">
+                        <h3><a href="#">Gran actuación en Juegos Olímpicos de la Polinesia</a></h3>
+                        <span class="date">Octubre, 2015</span>
+                        <span class="cetagory">en <strong>Noticias</strong></span>
+                    </div>
+                    <div class="entry-content">
+                        <p>Gran actuación tuvo el equipo Rapa nui en los VIIIº Juegos Olímpicos de la Polinesia, logrando
+                            rescatar 3 medallas de oro, 6 de plata y 3 de bronce. Destacaron sobre todo... </p>
+                    </div>
+                </div>
+                <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="800ms">
+                    <div class="post-thumb">
+                        <a href="#"><img class="img-responsive" src="images/blog/4.jpg" alt=""></a>
+                        <div class="post-meta">
+                            <span><i class="fa fa-comments-o"></i> 3 Comments</span>
+                            <span><i class="fa fa-heart"></i> 0 Likes</span>
+                        </div>
+                        <div class="post-icon">
+                            <i class="fa fa-video-camera"></i>
+                        </div>
+                    </div>
+                    <div class="entry-header">
+                        <h3><a href="#">Aprendamos acerca de la danza Rapa Nui</a></h3>
+                        <span class="date">June 26, 2014</span>
+                        <span class="cetagory">en <strong>Cultura</strong></span>
+                    </div>
+                    <div class="entry-content">
+                        <p>Extracto del libro "sdaf" que habla acerca de las raíces de la danza Rapa Nui. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="load-more wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
+                <a href="#" class="btn-loadmore"><i class="fa fa-repeat"></i> Load More</a>
+            </div>
+        </div-->
+        </div>
+    </section>
+
+
 
     <!--/#home>
     <section id="services">
@@ -193,7 +320,7 @@
                 <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
                     <div class="headerTitle">
                         <h2>Galería Ohiro Rapa Nui</h2>
-                    </div>                   
+                    </div>
                 </div>
             </div>
         </div>
@@ -401,7 +528,6 @@
                         <div class="headerTitle">
                             <h2>Dirección del grupo</h2>
                         </div>
-                        <p>Contáctate directamente con nuestros directores</p>
                     </div>
                 </div>
                 <div class="team-members">
@@ -409,12 +535,12 @@
                         <div class="col-sm-3">
                             <div class="team-member wow flipInY" data-wow-duration="1000ms" data-wow-delay="300ms">
                                 <div class="member-image">
-                                    <img class="img-responsive" src="images/team/1.jpg" alt="">
+                                    <img class="img-responsive" src="images/team/1.jpeg" alt="">
                                 </div>
                                 <div class="member-info">
                                     <h3>Dalila Sepúlveda</h3>
-                                    <h4>Directora de Bailarinas</h4>
-                                    <p>A cargo del aprendizaje y desarrollo de las bailarinas de nuestro grupo</p>
+                                    <h4>Dirección General</h4>
+                                    <p>A cargo de las gestiones y coordinación general de las actividades del grupo</p>
                                 </div>
                                 <div class="social-icons">
                                     <ul>
@@ -435,8 +561,7 @@
                                 <div class="member-info">
                                     <h3>Macarena Gutiérrez Kania</h3>
                                     <h4>Directora de bailarinas</h4>
-                                    <p>Encargado de la técnica de todo nuestro grupo de danza y del aprendizaje de nuestros
-                                        bailarinas
+                                    <p>Encargado de la técnica de todo nuestro grupo de danza y del aprendizaje de nuestros bailarinas
                                     </p>
                                 </div>
                                 <div class="social-icons">
@@ -458,8 +583,7 @@
                                 <div class="member-info">
                                     <h3>Miguel Parraguez</h3>
                                     <h4>Director de músicos</h4>
-                                    <p>Encargado del aprendizaje de canciones y ejecución de instrumentos, así como de arreglos
-                                        del equipo de músicos</p>
+                                    <p>Encargado del aprendizaje de canciones y ejecución de instrumentos, así como de arreglos del equipo de músicos</p>
                                 </div>
                                 <div class="social-icons">
                                     <ul>
@@ -480,8 +604,7 @@
                                 <div class="member-info">
                                     <h3>Miguel "Hotu" Olivares</h3>
                                     <h4>Director de bailarines</h4>
-                                    <p>Encargado de la técnica de todo nuestro grupo de danza y del aprendizaje de nuestros
-                                        bailarines
+                                    <p>Encargado de la técnica de todo nuestro grupo de danza y del aprendizaje de nuestros bailarines
                                     </p>
                                 </div>
                                 <div class="social-icons">
@@ -502,105 +625,7 @@
     <!--/#team-->
 
 
-    <!--/#twitter-->
 
-    <section id="rrss">
-        <div class="container">
-            <div class="row">
-                <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1200ms" data-wow-delay="300ms">
-                    <div class="headerTitle">
-                        <h2>Nuestras Redes Sociales</h2>
-                    </div>                    
-                </div>
-            </div>
-            <!--div class="blog-posts">
-                <div class="row">
-                    <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms">
-                        <div class="post-thumb">
-                            <a href="#"><img class="img-responsive" src="images/blog/1.jpg" alt=""></a>
-                            <div class="post-meta">
-                                <span><i class="fa fa-comments-o"></i> 3 Comments</span>
-                                <span><i class="fa fa-heart"></i> 0 Likes</span>
-                            </div>
-                            <div class="post-icon">
-                                <i class="fa fa-pencil"></i>
-                            </div>
-                        </div>
-                        <div class="entry-header">
-                            <h3><a href="#">Fiesta "Tapati" 2016</a></h3>
-                            <span class="date">Febrero, 2016</span>
-                            <span class="cetagory">in <strong>Cultura</strong></span>
-                        </div>
-                        <div class="entry-content">
-                            <p>La Tapati, fiesta tradicional de Rapa nui en donde se conmemoran y rinden honores a las tradiciones
-                                de los primero habitantes de la isla, cumple 50 años, por lo que este año la celebración
-                                será... </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="600ms">
-                        <div class="post-thumb">
-                            <div id="post-carousel" class="carousel slide" data-ride="carousel">
-                                <ol class="carousel-indicators">
-                                    <li data-target="#post-carousel" data-slide-to="0" class="active"></li>
-                                    <li data-target="#post-carousel" data-slide-to="1"></li>
-                                    <li data-target="#post-carousel" data-slide-to="2"></li>
-                                </ol>
-                                <div class="carousel-inner">
-                                    <div class="item active">
-                                        <a href="#"><img class="img-responsive" src="images/blog/2.jpg" alt=""></a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#"><img class="img-responsive" src="images/blog/3.jpg" alt=""></a>
-                                    </div>
-                                </div>
-                                <a class="blog-left-control" href="#post-carousel" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-                                <a class="blog-right-control" href="#post-carousel" role="button" data-slide="next"><i class="fa fa-angle-right"></i></a>
-                            </div>
-                            <div class="post-meta">
-                                <span><i class="fa fa-comments-o"></i> 3 Comments</span>
-                                <span><i class="fa fa-heart"></i> 0 Likes</span>
-                            </div>
-                            <div class="post-icon">
-                                <i class="fa fa-picture-o"></i>
-                            </div>
-                        </div>
-                        <div class="entry-header">
-                            <h3><a href="#">Gran actuación en Juegos Olímpicos de la Polinesia</a></h3>
-                            <span class="date">Octubre, 2015</span>
-                            <span class="cetagory">en <strong>Noticias</strong></span>
-                        </div>
-                        <div class="entry-content">
-                            <p>Gran actuación tuvo el equipo Rapa nui en los VIIIº Juegos Olímpicos de la Polinesia, logrando
-                                rescatar 3 medallas de oro, 6 de plata y 3 de bronce. Destacaron sobre todo... </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="800ms">
-                        <div class="post-thumb">
-                            <a href="#"><img class="img-responsive" src="images/blog/4.jpg" alt=""></a>
-                            <div class="post-meta">
-                                <span><i class="fa fa-comments-o"></i> 3 Comments</span>
-                                <span><i class="fa fa-heart"></i> 0 Likes</span>
-                            </div>
-                            <div class="post-icon">
-                                <i class="fa fa-video-camera"></i>
-                            </div>
-                        </div>
-                        <div class="entry-header">
-                            <h3><a href="#">Aprendamos acerca de la danza Rapa Nui</a></h3>
-                            <span class="date">June 26, 2014</span>
-                            <span class="cetagory">en <strong>Cultura</strong></span>
-                        </div>
-                        <div class="entry-content">
-                            <p>Extracto del libro "sdaf" que habla acerca de las raíces de la danza Rapa Nui. </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="load-more wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="500ms">
-                    <a href="#" class="btn-loadmore"><i class="fa fa-repeat"></i> Load More</a>
-                </div>
-            </div-->
-        </div>
-    </section>
     <!--/#blog-->
 
     <section id="contact">
@@ -623,10 +648,10 @@
                         <div class="headerTitle">
                             <h2>Contáctanos</h2>
                         </div>
-                        <p>
-                            Para eventos, matrimonios, celebraciones o si te interesa participar con nosotros, si quieres información acerca de esta bella cultura que
-                            transmitimos o quieres hacernos algún comentario, contáctate con nosotros.
-                        </p>
+                        <br>
+                        <strong>
+                            Para eventos, matrimonios, celebraciones o si te interesa participar con nosotros, si quieres información acerca de esta bella cultura que transmitimos o quieres hacernos algún comentario, contáctate con nosotros.
+                        </strong>
                     </div>
                 </div>
                 <div class="contact-form wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
@@ -658,23 +683,32 @@
                         </div>
                         <div class="col-sm-6">
                             <div class="contact-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
-                                <p> Ensayo todos los Miércoles de 19:00 a 21 hrs y Sábados de 13:00 a 16:30 hrs <br>
-                                    Sala multiuso Universidad de las Américas, <br>
-                                    Sede Echaurren, Piso -1
+                                <p>
+                                    Ensayo todos los Miércoles de 19:00 a 21 hrs y Sábados de 13:00 a 16:30 hrs <br> Sala multiuso Universidad de las Américas, <br> Sede Echaurren, Piso -1
                                 </p>
-                                
+
                                 <ul class="address">
-                                    <li><i class="fa fa-map-marker"></i> <span> Dirección:</span> Echaurren 140, Santiago
-                                        Centro (Metro República) </li>
+                                    <li><i class="fa fa-map-marker"></i> <span> Dirección:</span> Echaurren 140, Santiago Centro (Metro República) </li>
                                     <li><i class="fa fa-phone"></i> <span> Teléfono:</span> +56 9 1234 5678 </li>
                                     <li><i class="fa fa-envelope"></i> <span> Email:</span><a href="mailto:ohirorapanui@gmail.com">
                                             ohirorapanui@gmail.com </a></li>
-                                    <li><i class="fa fa-globe"></i> <span> Website:</span> <a href="#">www.ohirorapanui.cl</a></li>
+                                    <li><i class="fa fa-globe"></i> <span> RRSS:</span> <a href="https://www.facebook.com/OhiroRapaNui/">Fan Page</a></li>
+                                    <li>
+                                        <div class="fb-page" data-href="https://www.facebook.com/OhiroRapaNui/" data-tabs="timeline" data-height="70" data-small-header="false" data-adapt-container-width="false" data-width="500px" data-hide-cover="false" data-show-facepile="true">
+                                            <blockquote cite="https://www.facebook.com/OhiroRapaNui/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/OhiroRapaNui/">Facebook</a></blockquote>
+                                        </div>
+                                    </li>
                                 </ul>
+
+
                             </div>
+
                         </div>
                     </div>
+
                 </div>
+
+
             </div>
         </div>
     </section>
